@@ -1,0 +1,27 @@
+{
+  "name": "snake-game",
+  "version": "0.1.0",
+  "description": "snake-game",
+  "scripts": {
+    "dev": "tsc --noEmit && parcel src/public/index.html",
+    "start": "parcel src/public/index.html",
+    "build": "parcel build src/public/index.html --no-source-maps",
+    "clean": "rimraf ./dist",
+    "lint": "eslint  src/ --ext .js --ext .jsx --ext .ts",
+    "lint-fix": "eslint src/ --ext .js --ext .jsx --fix --ext .ts"
+  },
+  "author": "Igor P.",
+  "license": "MIT",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.3",
+    "@parcel/validator-typescript": "^2.8.3",
+    "@typescript-eslint/eslint-plugin": "^5.59.0",
+    "@typescript-eslint/parser": "^5.59.0",
+    "eslint": "^8.38.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "parcel": "^2.8.3",
+    "prettier": "^2.8.7",
+    "typescript": "^5.0.4"
+  }
+}

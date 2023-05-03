@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../assets/style.scss">
+  <title>Snake game</title>
+</head>
+<body>
+  <div class="container">
+    <div class="container__inner">
+      <div class="score">
+        <p class="score__total">
+          <i class="fa-solid fa-trophy score__icon"></i>
+          <span class="score__label">High score:</span>
+          <span class="score__value score__value--best">0</span>
+        </p>
+        <p class="score__current">
+          <i class="fa-solid fa-medal score__icon"></i>
+          <span class="score__label">Current score:</span>
+          <span class="score__value score__value--current">0</span>
+      </div>
+      <main class="game">
+        <canvas class="game__board game__board--canvas" alt="Snake game board"></canvas>
+        <div class="game__start">
+          <p>Press any key for start game</p>
+        </div>
+        <div style="display:none;">
+          <img id="source" src="../assets/images/eyes.png" />
+        </div>
+      </main>
+    </div>
+  </div>
+  <script src="../main.ts" type="module"></script>
+</body>
+</html>

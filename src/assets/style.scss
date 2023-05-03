@@ -1,0 +1,62 @@
+// @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+@import 'utilities/_variables.scss';
+@import 'base/_reset';
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.3em;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--background-color);
+  background-image: var(--background-image);
+  color: $color-grey;
+}
+
+.container__inner {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.score {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 30px;
+  padding: 0 20px;
+  background-color: $color-violet;
+  color: $color-white;
+}
+
+.score__total,
+.score__current {
+  font-size: 22px;
+}
+
+.game {
+  display: flex;
+  position: relative;
+}
+
+.game__board--canvas {
+  background-color: $color-white;
+}
+
+.game__start {
+  background-color: $color-violet;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  display: block;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
